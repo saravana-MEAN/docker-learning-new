@@ -1,0 +1,10 @@
+image: node:16.18.1-alpine3.17
+
+stages:
+  - setup
+  - test
+
+install:
+  stage: setup
+  script:
+    -npm ci
